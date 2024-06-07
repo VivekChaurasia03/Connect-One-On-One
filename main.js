@@ -58,12 +58,12 @@ let init = async () => {
 };
 
 let handleUserJoined = async (MemberID) => {
-    console.log("New User joined the channel: ", MemberID);
+    // console.log("New User joined the channel: ", MemberID);
     await createOffer(MemberID);
 };
 
 let handleUserLeft = (MemberID) => {
-    console.log("User left the channel: ", MemberID);
+    // console.log("User left the channel: ", MemberID);
     document.getElementById("user-2").style.display = "none";
     document.getElementById("user-2").classList.remove("smallFrame");
 };
